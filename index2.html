@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="js/flipdown/flipdown.js"> -->
+    <script src="js/flipdown/flipdown.js"></script>
+    <link rel="stylesheet" href="css/flipdown/flipdown.css">
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body.light-theme {
+            background-color: #151515;
+        }
+
+        body.light-theme .example h1 {
+            color: #FFFFFF;
+        }
+
+        body.light-theme .example p {
+            color: #FFFFFF;
+        }
+
+        body.light-theme .buttons .button {
+            color: #FFFFFF;
+            border-color: #FFFFFF;
+        }
+
+        body.light-theme .buttons .button:hover {
+            color: #151515;
+            background-color: #FFFFFF;
+        }
+
+        #iiits_logo{
+            width: 5rem;
+        }
+
+        #abhisarga_logo{
+            width: 21rem;
+        }
+
+        p{
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
+        }
+    </style>
+    <title>Abhisarga 2020</title>
+</head>
+
+<body>
+    <!-- <div class="example"> -->
+        <!-- <h1>FlipDown.js</h1> -->
+        <img src="images/iiits.png" id="iiits_logo">
+        <p>USICT GGSIPU <br> Presents</p>
+        <br>
+        <img src="img/logo.png" id="abhisarga_logo">
+        <br>
+        <div id="flipdown" class="flipdown"></div>
+    <!-- </div> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Unix timestamp (in seconds) to count down to
+            var Margin30 = (new Date(2020, 2, 20) / 1000);
+
+            // Set up FlipDown
+            var flipdown = new FlipDown(Margin30)
+
+                // Start the countdown
+                .start()
+
+                // Do something when the countdown ends
+                .ifEnded(() => {
+                    console.log('The countdown has ended!');
+                });
+
+            // Toggle theme
+            let body = document.body;
+            body.classList.toggle('light-theme');
+            body.querySelector('#flipdown').classList.toggle('flipdown__theme-light');
+
+            var ver = document.getElementById('ver');
+            ver.innerHTML = flipdown.version;
+        });
+
+    </script>
+</body>
+
+</html>

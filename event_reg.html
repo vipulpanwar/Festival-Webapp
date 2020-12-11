@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/event_reg.css" />
+</head>
+
+<body>
+  <div id="event-reg-form-container">
+    <div id="reg-form-text">
+      Hello, you are registered for.....<strong>Hello</strong>.....don't forget
+    </div>
+    <form>
+      <div id="reg-fields">
+        <label>Field</label>
+        <input type="text" placeholder="Field 1" />
+        <label>Hello</label>
+        <input type="text" placeholder="Field 2" />
+        <label>Hiii..</label>
+        <input type="text" placeholder="Field 3" />
+        <div class="error">Hello I am error</div>
+      </div>
+      <strong>Please enter names of your team members</strong>
+      <div id="team-members">
+        <input type="text" placeholder="Member Name" name="members" />
+      </div>
+      <div id="members-button-container">
+        <input id="add-members" class="members-button" type="button" value="+ Add team member">
+        <input id="remove-members" class="members-button" type="button" value="- Remove team member">
+      </div>
+      <a type="submit" class="data-button">Hello</a>
+    </form>
+    <center><a id="reg-form-link">Go back to profile</a></center>
+  </div>
+  <script>
+    let minSize = 2;
+    let maxSize = 5;
+    let teamList = document.getElementById("team-members");
+
+    function addMem() {
+      if (teamList.childElementCount == maxSize) {
+        return;
+      }
+      let x = document.createElement("input");
+      x.setAttribute("type", "text");
+      x.setAttribute("placeholder", "Member Name");
+      x.setAttribute("name", "members");
+      teamList.appendChild(x);
+    }
+
+    function remMem() {
+      if (teamList.childElementCount == minSize) {
+        return;
+      }
+      let x = teamList.lastChild;
+      x.remove();
+    }
+
+    document.getElementById('add-members').onclick = addMem;
+    document.getElementById('remove-members').onclick = remMem;
+  </script>
+</body>
+
+</html>

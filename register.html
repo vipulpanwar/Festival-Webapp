@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="og:type" content="Website" />
+    <meta name="og:site_name" content="Abhisarga 2020" />
+    <meta name="og:image" content="abhisarga.iiits.in/images/logo.png" />
+    <meta name="og:url" content="abhisarga.iiits.in" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="og:description"
+        content="Abhisarga 2020: 20th - 22nd March. Abhisarga is the annual techno-cultural fest of the Indian Institute of Information Technology, Sri City. Celebrating Creativity and Innovation." />
+    <meta name="theme-color" content="#1a002a" />
+    <title>Login | Abhisarga 2020</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/form_better.css" />
+</head>
+
+<body>
+    <div id="side-nav">
+        <div class="hoverid">
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">Registration</a>
+            <a href="#">Sponsors</a>
+            <a href="#">Accommodation</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <nav id="navbar">
+        <a href="#" id="logoimg">
+            <img src="images/logo.png" alt="Dikshatra Logo" />
+        </a>
+        <div id="nav-buttons">
+            <button type="button" id="register">Login</button>
+            <div id="hamburger" value=""></div>
+        </div>
+    </nav>
+
+    <div id="form-container">
+        <img id="form-image" src="img/galactus.png">
+        <div id="main-form">
+            <h1>Register</h1>
+            <form action="">
+                <label>Email</label><input type="email" data-box="text" placeholder="Email ID">
+                <div class="form-error-message">Form Error</div>
+                <label>Password</label><input type="password" data-box="text" placeholder="Password">
+                <label>First Name</label><input type="text" data-box="text" placeholder="First Name">
+                <label>Last Name</label><input type="file" data-box="text" placeholder="Last Name">
+                <label>College</label>
+                <select>
+                    <option>Hello</option>
+                </select>
+                <input type="submit" data-box="button">
+                <div class="form-error-message">Form Error</div>
+            </form>
+            <div class="divider"><span></span><span>OR</span><span></span></div>
+            <label>You can signup using your google account</label>
+            <input type="button" data-box="button" value="Signup with Google">
+            <div class="center"><a href="">I'm already a member</a></div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="social">
+            <a href="#">
+                <img src="#" />
+            </a>
+            <a href="#">
+                <img src="#" />
+            </a>
+            <a href="https://www.instagram.com/vipul_panwar.96/">
+                <img src="images/instagram.svg" />
+            </a>
+        </div>
+        <div id="address">
+            USICT GGSIPU<br />
+           Sector 16 Dwarka<br />New Delhi
+        </div>
+    </div>
+
+    <script>
+        let a = document.getElementById("hamburger");
+        a.setAttribute("value", "\u2630");
+        a.addEventListener("click", () => {
+            toggleNav();
+            if (a.getAttribute("value") === "\u2630") {
+                a.setAttribute("value", "\u2715");
+            } else {
+                a.setAttribute("value", "\u2630");
+            }
+        });
+        function toggleNav() {
+            document.getElementById("side-nav").classList.toggle("active");
+        }
+        document.body.addEventListener('click', function (e) {
+            if (!(document.getElementById("side-nav").contains(e.target) || a.contains(e.target))) {
+                document.getElementById("side-nav").classList.remove("active");
+            }
+        });
+    </script>
+</body>
+
+</html>

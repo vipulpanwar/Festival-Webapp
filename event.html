@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="og:type" content="Website" />
+    <meta name="og:site_name" content="Abhisarga 2020" />
+    <meta name="og:image" content="abhisarga.iiits.in/images/logo.png" />
+    <meta name="og:url" content="abhisarga.iiits.in" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="og:description"
+        content="Dikshatra 2020. Dikshatra is the annual techno-cultural fest. Celebrating Creativity and Innovation." />
+    <meta name="theme-color" content="#1a002a" />
+    <title>Event | Abhisarga 2020</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/event.css" />
+</head>
+
+<body>
+    <div id="side-nav">
+        <div class="hoverid">
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">Registration</a>
+            <a href="#">Sponsors</a>
+            <a href="#">Accommodation</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <nav id="navbar">
+        <a href="#" id="logoimg">
+            <img src="#" alt="Dikshatra Logo" />
+        </a>
+        <div id="nav-buttons">
+            <button type="button" id="register">Login</button>
+            <div id="hamburger" value=""></div>
+        </div>
+    </nav>
+
+    <div id="event-container">
+        <div id="event-image">
+            <img src="images/joker3.jpg">
+        </div>
+        <div id="event-detail">
+            <h1>Event Name</h1>
+            <h2>Description</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias deleniti debitis natus aliquid odio
+                facilis quisquam, fuga sed accusantium veritatis qui officia? Reiciendis, cumque odit tempore vero ipsum
+                nemo incidunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum incidunt sed excepturi
+                similique ducimus sunt aut iure molestiae, delectus fugiat ullam ipsam modi consectetur perspiciatis
+                optio voluptas magnam! Incidunt, eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Debitis veniam animi id nisi tenetur ut voluptates ullam incidunt, natus voluptatem unde eos consequatur
+                possimus quisquam fuga ea ipsum, tempore atque! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Vel quae amet corporis est perspiciatis debitis similique placeat provident illum, blanditiis enim in
+                vitae laudantium recusandae aliquid consectetur saepe! Quo, itaque?
+            </p>
+            <div id="ev-venue">Venue: -----</div>
+            <div id="ev-time">Time: ----</div>
+            <div id="ev-contact">Contact: ----</div>
+            <div id="ev-prize">
+                <span>1st Prize: --</span>
+                <span>2nd Prize: --</span>
+                <span>3rd Prize: --</span>
+            </div>
+            <a id="event-register" href="">Register</a>
+            <div id="event-rule" class="">
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit amet </span>
+                <span> dolore quisquam ullam iste reprehenderit! Nihil, asperiores doloremque minima natus </span>
+                <span>tenetur atque suscipit obcaecati corporis ut ipsa in perspiciatis.</span>
+            </div>
+            <div id="rule-open-button" title="Rules"></div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="social">
+            <a href="#">
+                <img src="#" />
+            </a>
+            <a href="#">
+                <img src="#" />
+            </a>
+            <a href="#">
+                <img src="#" />
+            </a>
+        </div>
+        <div id="address">
+            USICT GGSIPU<br />
+            sector 16 dwarka<br />New Delhi
+        </div>
+    </div>
+
+    <script>
+        let a = document.getElementById("hamburger");
+        a.setAttribute("value", "\u2630");
+        a.addEventListener("click", () => {
+            toggleNav();
+            if (a.getAttribute("value") === "\u2630") {
+                a.setAttribute("value", "\u2715");
+            } else {
+                a.setAttribute("value", "\u2630");
+            }
+        });
+        function toggleNav() {
+            document.getElementById("side-nav").classList.toggle("active");
+        }
+        document.body.addEventListener('click', function (e) {
+            if (!(document.getElementById("side-nav").contains(e.target) || a.contains(e.target))) {
+                document.getElementById("side-nav").classList.remove("active");
+            }
+        });
+    </script>
+    <script>
+        let rlb = document.getElementById("event-rule");
+        let btn = document.getElementById("rule-open-button");
+
+        function ruleToggle() {
+            rlb.classList.toggle("ruleopen");
+            btn.classList.toggle("ruleopen");
+        }
+
+        btn.onclick = function () {
+            ruleToggle();
+        }
+    </script>
+</body>
+
+</html>

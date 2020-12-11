@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="og:type" content="Website" />
+    <meta name="og:site_name" content="Abhisarga 2020" />
+    <meta name="og:image" content="abhisarga.iiits.in/images/logo.png" />
+    <meta name="og:url" content="abhisarga.iiits.in" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="og:description"
+        content="Abhisarga 2020: 20th - 22nd March. Abhisarga is the annual techno-cultural fest of the Indian Institute of Information Technology, Sri City. Celebrating Creativity and Innovation." />
+    <meta name="theme-color" content="#1a002a" />
+    <title>Login | Abhisarga 2020</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+</head>
+
+<body>
+    <div id="side-nav">
+        <div class="hoverid">
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">Registration</a>
+            <a href="#">Sponsors</a>
+            <a href="#">Accommodation</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <nav id="navbar">
+        <a href="#" id="logoimg">
+            <img src="images/logo.png" alt="Dikshatra Logo" />
+        </a>
+        <div id="nav-buttons">
+            <button type="button" id="register">Login</button>
+            <div id="hamburger" value=""></div>
+        </div>
+    </nav>
+    <div id="form-container">
+        <img src="images/login_top.png">
+        <div id="main-form">
+            <form>
+                <input type="email" placeholder="Email" data-box="text"><i class="email"></i>
+                <div class="form-error-message">Hello World</div>
+                <input type="password" placeholder="Password" data-box="text"><i class="password"></i>
+                <input type="submit" value="Hello" data-box="button">
+            </form>
+            <div class="center"><a href="#">hii</a></div>
+            <div class="divider"><span></span><span>OR</span><span></span></div>
+            <input type="button" value="Login with Google" data-box="button">
+        </div>
+        <hr>
+        <p id="form-redirect"><a href="">Hello World</a></p>
+    </div>
+    <div id="footer-base"></div>
+    <div id="footer">
+        <div id="social">
+            <a href="#">
+                <img src="#" />
+            </a>
+            <a href="#">
+                <img src="#" />
+            </a>
+            <a href="https://www.instagram.com/vipul_panwar.96/">
+                <img src="images/instagram.svg" />
+            </a>
+        </div>
+        <div id="address">
+            USICT GGSIPU<br />
+            Sector 16 Dwarka<br />New Delhi
+        </div>
+    </div>
+
+    <script>
+        let a = document.getElementById("hamburger");
+        a.setAttribute("value", "\u2630");
+        a.addEventListener("click", () => {
+            toggleNav();
+            if (a.getAttribute("value") === "\u2630") {
+                a.setAttribute("value", "\u2715");
+            } else {
+                a.setAttribute("value", "\u2630");
+            }
+        });
+        function toggleNav() {
+            document.getElementById("side-nav").classList.toggle("active");
+        }
+        document.body.addEventListener('click', function (e) {
+            if (!(document.getElementById("side-nav").contains(e.target) || a.contains(e.target))) {
+                document.getElementById("side-nav").classList.remove("active");
+            }
+        });
+    </script>
+</body>
+
+</html>

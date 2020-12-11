@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/events.css" />
+  <title>Events</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="go-previous" class="go-button">
+      <span id="go-button-previous">
+        <img src="img/prev.png" />
+      </span>
+    </div>
+    <div id="go-next" class="go-button">
+      <span id="go-button-next">
+        <img src="img/next.png" />
+      </span>
+    </div>
+    <div class="card">
+      <img class="back" src="img/hulk.svg" />
+      <img class="back drop" src="img/hulk_back.png" />
+      <img class="superhero filter" src="img/hulk.png" />
+      <img class="superhero image" src="img/hulk.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+    <div class="card">
+      <img class="back" src="img/gravattak.svg" />
+      <img class="back drop" src="img/minato_back.png" />
+      <img class="superhero filter" src="img/minato.png" />
+      <img class="superhero image" src="img/minato.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+    <div class="card">
+      <img class="back" src="img/batman.svg" />
+      <img class="back drop" src="img/batman_back.jpg" />
+      <img class="superhero filter" src="img/batman.png" />
+      <img class="superhero image" src="img/batman.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+    <div class="card">
+      <img class="back" src="img/carnage.svg" />
+      <img class="back drop" src="img/carnage_back.jpg" />
+      <img class="superhero filter" src="img/carnage.png" />
+      <img class="superhero image" src="img/carnage.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+    <div class="card">
+      <img class="back" src="img/rey.svg" />
+      <img class="back drop" src="img/rey_back2.jpg" />
+      <img class="superhero filter" src="img/rey.png" />
+      <img class="superhero image" src="img/rey.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+    <div class="card">
+      <img class="back" src="img/gravattak.svg" />
+      <img class="back drop" src="img/minato_back.png" />
+      <img class="superhero filter" src="img/minato.png" />
+      <img class="superhero image" src="img/minato.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+    <div class="card">
+      <img class="back" src="img/rath.svg" />
+      <img class="back drop" src="img/rath.png" />
+      <img class="superhero filter" src="img/rath.png" />
+      <img class="superhero image" src="img/rath.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+    <div class="card">
+      <img class="back" src="img/vader.svg" />
+      <img class="back drop" src="img/vader_back.jpg" />
+      <img class="superhero filter" src="img/vader.png" />
+      <img class="superhero image" src="img/vader.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+    <div class="card">
+      <img class="back" src="img/venom.svg" />
+      <img class="back drop" src="img/venom_back.jpg" />
+      <img class="superhero filter" src="img/venom.png" />
+      <img class="superhero image" src="img/venom.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+    <div class="card">
+      <img class="back" src="img/greenlantern.svg" />
+      <img class="back drop" src="img/greenlantern.png" />
+      <img class="superhero filter" src="img/greenlantern.png" />
+      <img class="superhero image" src="img/greenlantern.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+    <div class="card">
+      <img class="back" src="img/thing.svg" />
+      <img class="back drop" src="img/thing_back.jpg" />
+      <img class="superhero filter" src="img/thing.png" />
+      <img class="superhero image" src="img/thing.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+    <div class="card">
+      <img class="back" src="img/gravattak.svg" />
+      <img class="back drop" src="img/gravattak.png" />
+      <img class="superhero filter" src="img/gravattak.png" />
+      <img class="superhero image" src="img/gravattak.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+    <div class="card">
+      <img class="back" src="img/deadpool.svg" />
+      <img class="back drop" src="img/deadpool_back.jpg" />
+      <img class="superhero filter" src="img/deadpool.png" />
+      <img class="superhero image" src="img/deadpool.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+    <div class="card">
+      <img class="back" src="img/ironfist.svg" />
+      <img class="back drop" src="img/ironfist_back.jpg" />
+      <img class="superhero filter" src="img/ironfist.png" />
+      <img class="superhero image" src="img/ironfist.png" />
+      <span>HULK GAMES</span>
+      <div class="text"></div>
+    </div>
+  </div>
+  <script>
+    if (window.matchMedia("(max-width: 360px)").matches) {
+      /* The viewport is less than, or equal to, 700 pixels wide */
+    } else {
+      let list = document.getElementsByClassName("card");
+      let start = list.length / 2;
+      for (let i = 0; i < list.length; i++) {
+        let e = list[i];
+        e.addEventListener("click", function () {
+          e.classList.toggle("active");
+        });
+      }
+  
+      function next() {
+        for (let i = 0; i < list.length; i++) {
+          if (list[i].classList.contains("active")) {
+            list[i].classList.remove("active");
+            list[(i + 1) % list.length].classList.add("active");
+            break;
+          }
+        }
+        start = (start + 1) % list.length;
+        animate();
+      }
+  
+      function previous() {
+        for (let i = 0; i < list.length; i++) {
+          if (list[i].classList.contains("active")) {
+            list[i].classList.remove("active");
+            list[(i - 1 + list.length) % list.length].classList.add("active");
+            break;
+          }
+        }
+        start = (start - 1 + list.length) % list.length;
+        animate();
+      }
+  
+      function animate() {
+        let right = parseInt(list.length / 2) - 1;
+        let left = list.length - right - 1;
+        list[start].style.left = "24em";
+        for (let i = 1; i <= left; i++) {
+          let e = list[(start - i + list.length) % list.length];
+          e.style.left = (3 - i) * 8 + "em";
+        }
+        for (let i = 1; i <= right; i++) {
+          let e = list[(start + i) % list.length];
+          e.style.left = (3 + i) * 8 + "em";
+        }
+      }
+  
+      document.getElementById("go-button-next").onclick = next;
+      document.getElementById("go-button-previous").onclick = previous;
+  
+      animate();    }
+    
+  </script>
+</body>
+
+</html>

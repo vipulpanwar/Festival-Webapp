@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="og:type" content="Website" />
+  <meta name="og:site_name" content="Abhisarga 2020" />
+  <meta name="og:image" content="abhisarga.iiits.in/images/logo.png" />
+  <meta name="og:url" content="abhisarga.iiits.in" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="og:description"
+    content="Dikshatra 2020. Dikshatra is the annual techno-cultural fest. Celebrating Creativity and Innovation." />
+  <meta name="theme-color" content="#1a002a" />
+  <title>Abhisarga 2020</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="side-nav">
+      <div class="hoverid">
+        <a href="#">About</a>
+        <a href="#">Events</a>
+        <a href="#">Registration</a>
+        <a href="#">Sponsors</a>
+        <a href="#">Accommodation</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <a href="#" id="logoimg">
+      <img src="images/logo.png" alt="Dikshatra Logo" />
+    </a>
+    <div id="nav-buttons">
+      <button type="button" id="register">Login</button>
+      <div id="hamburger" value=""></div>
+    </div>
+  </nav>
+
+  <div id="main">
+    <div id="text">
+      <img src="images/text/A1.svg" alt="A" id="A1" />
+      <img src="images/text/B.svg" alt="B" id="B" />
+      <img src="images/text/H.svg" alt="H" id="H" />
+      <img src="images/text/I.svg" alt="I" id="I" />
+      <img src="images/text/S.svg" alt="S" id="S" />
+      <img src="images/text/A2.svg" alt="A" id="A2" />
+      <img src="images/text/R.svg" alt="R" id="R" />
+      <img src="images/text/G.svg" alt="G" id="G" />
+      <img src="images/text/A3.svg" alt="A" id="A3" />
+    </div>
+    <img id="character" src="images/char.svg" alt="Character" />
+    <div id="scroll-icons">
+      <img class="icons" id="icon1" alt="icon" src="images/icons/bw.png" />
+      <img class="icons" id="icon2" alt="icon" src="images/icons/ltn.png" />
+      <img class="icons" id="icon3" alt="icon" src="images/icons/ff.svg" />
+      <img class="icons" id="icon4" alt="icon" src="images/icons/hydra.png" />
+      <img class="icons" id="icon5" alt="icon" src="images/icons/shld.png" />
+      <img class="icons" id="icon6" alt="icon" src="images/icons/im.png" />
+      <img class="icons" id="icon7" alt="icon" src="images/icons/xmen.svg" />
+      <img class="icons" id="icon8" alt="icon" src="images/icons/swr.svg" />
+    </div>
+  </div>
+
+  <div id="about">
+    <div id="abttext">
+      <h1 id="abthead">
+        ABOUT
+      </h1>
+      <p>
+        Dikshatra, the annual techno-cultural fest of IIIT Sri City, is an
+        equanimous fusion of energy, enthusiasm and talent. We welcome you all
+        to the 7th edition of Dikshatra to invigorate yourselves with a
+        spectacular showcase of talents. Code your way to exciting rewards.
+        Embrace yourself for another cultural extravaganza and join us this
+        year from 20th March- 22nd March at IIIT Sri City!!!
+        <br>
+        This year our theme is comic con. Over the years comics have given us a
+        world of imagination, emotions, thought, vibrant colors and fantasy
+        characters to dive into. It has widened our perspectives on social
+        conundrums motivating to conquer new heights in our scientific pursuits.
+        All of this is just about to get real. Right from DC to Marvel, from tinkle to
+        Manga we’ll unearth every secret the world has yet to confront.
+      </p>
+    </div>
+    <div id="abtimg">
+      <img src="images/joker.jpg" alt="Joker - Why So Serious?" />
+    </div>
+  </div>
+
+  <div id="test">
+    <h1>
+      GET IN TOUCH
+    </h1>
+    <div id="columns">
+      <div class="column">
+        <p>
+          <strong>ABC</strong>
+          <br>
+          President
+          <br>Students' Council
+          <br>+91 123
+        </p>
+      </div>
+      <div class="column">
+        <p>
+          <strong>ABC</strong>
+          <br>
+          Secretary
+          <br>Students' Council
+          <br>+91 123
+        </p>
+      </div>
+      <div class="column">
+        <p>
+          <strong>ABC</strong>
+          <br>
+          Vice President
+          <br>Students' Council
+          <br>+91 123
+        </p>
+      </div>
+      <div class="column">
+        <p>
+          <strong>ABC</strong>
+          <br>
+          Technical Secretary
+          <br>Students' Council
+          <br>+91 123
+        </p>
+      </div>
+      <div class="column">
+        <p>
+          <strong>ABC</strong>
+          <br>
+          Cultural Secretary
+          <br>Students' Council
+          <br>+91 123
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-base"></div>
+
+  <div id="footer">
+    <div id="social">
+      <a href="#">
+        <img src="#" />
+      </a>
+      <a href="#">
+        <img src="#" />
+      </a>
+      <a href="https://www.instagram.com/vipul_panwar.96/">
+        <img src="#" />
+      </a>
+    </div>
+    <div id="address">
+      USICT GGSIPU<br />
+      Sector 16 Dwarka<br />New Delhi
+    </div>
+  </div>
+
+  <script>
+    let a = document.getElementById("hamburger");
+    a.setAttribute("value", "\u2630");
+    a.addEventListener("click", () => {
+      toggleNav();
+      if (a.getAttribute("value") === "\u2630") {
+        a.setAttribute("value", "\u2715");
+      } else {
+        a.setAttribute("value", "\u2630");
+      }
+    });
+    function toggleNav() {
+      document.getElementById("side-nav").classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>

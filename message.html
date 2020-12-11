@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="og:type" content="Website" />
+    <meta name="og:site_name" content="Abhisarga 2020" />
+    <meta name="og:image" content="abhisarga.iiits.in/images/logo.png" />
+    <meta name="og:url" content="abhisarga.iiits.in" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="og:description"
+        content="Abhisarga 2020: 20th - 22nd March. Abhisarga is the annual techno-cultural fest of the Indian Institute of Information Technology, Sri City. Celebrating Creativity and Innovation." />
+    <meta name="theme-color" content="#1a002a" />
+    <title>Members</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/message.css" />
+</head>
+
+<body>
+    <div id="side-nav">
+        <div class="hoverid">
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">Registration</a>
+            <a href="#">Sponsors</a>
+            <a href="#">Accommodation</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <nav id="navbar">
+        <a href="#" id="logoimg">
+            <img src="images/logo.png" alt="Abhisarga Logo" />
+        </a>
+        <div id="nav-buttons">
+            <button type="button" id="register">Login</button>
+            <div id="hamburger" value=""></div>
+        </div>
+    </nav>
+
+    <div id="message-container">
+        <div id="message-box">
+            <div id="message-heading"><span></span><span>Message</span><span></span></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis id illo laborum. Quas,
+                voluptas temporibus nemo aut rerum, numquam quidem adipisci molestiae fuga distinctio magnam amet nobis
+                labore. Voluptate!
+            </p>
+            <span>Click Here</span>
+            <span><a href="">Hello</a></span>
+        </div>
+    </div>
+
+    <div id="footer-base"></div>
+    <div id="footer">
+        <div id="social">
+            <a href="#">
+                <img src="#" />
+            </a>
+            <a href="#">
+                <img src="#" />
+            </a>
+            <a href="https://www.instagram.com/vipul_panwar.96//">
+                <img src="#" />
+            </a>
+        </div>
+        <div id="address">
+            USICT GGSIPU<br />
+            SECTOR 16 Dwarka<br />New Delhi
+        </div>
+    </div>
+
+    <script>
+        let a = document.getElementById("hamburger");
+        a.setAttribute("value", "\u2630");
+        a.addEventListener("click", () => {
+            toggleNav();
+            if (a.getAttribute("value") === "\u2630") {
+                a.setAttribute("value", "\u2715");
+            } else {
+                a.setAttribute("value", "\u2630");
+            }
+        });
+        function toggleNav() {
+            document.getElementById("side-nav").classList.toggle("active");
+        }
+        document.body.addEventListener('click', function (e) {
+            if (!(document.getElementById("side-nav").contains(e.target) || a.contains(e.target))) {
+                document.getElementById("side-nav").classList.remove("active");
+            }
+        });
+    </script>
+</body>
+
+</html>

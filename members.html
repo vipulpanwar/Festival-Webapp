@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="og:type" content="Website" />
+    <meta name="og:site_name" content="Abhisarga 2020" />
+    <meta name="og:image" content="abhisarga.iiits.in/images/logo.png" />
+    <meta name="og:url" content="abhisarga.iiits.in" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="og:description"
+        content="Abhisarga 2020: 20th - 22nd March. Abhisarga is the annual techno-cultural fest of the Indian Institute of Information Technology, Sri City. Celebrating Creativity and Innovation." />
+    <meta name="theme-color" content="#1a002a" />
+    <title>Members</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/members.css" />
+</head>
+
+<body>
+    <div id="side-nav">
+        <div class="hoverid">
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">Registration</a>
+            <a href="#">Sponsors</a>
+            <a href="#">Accommodation</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <nav id="navbar">
+        <a href="#" id="logoimg">
+            <img src="images/logo.png" alt="Abhisarga Logo" />
+        </a>
+        <div id="nav-buttons">
+            <button type="button" id="register">Login</button>
+            <div id="hamburger" value=""></div>
+        </div>
+    </nav>
+
+    <div id="members-container">
+        <div class="member-background">
+            <div class="member-info">
+                <img src="images/popcorn.svg">
+                <div class="member-detail">
+                    <h1>Name</h1>
+                    <h2>Divison</h2>
+                </div>
+                <div class="member-contact">
+                    <h3 contact="email"><a href="#">email@email.com</a></h3>
+                    <h3 contact="phone"><a href="#">+9374934739</a></h3>
+                </div>
+                <div class="member-social">
+                    <a href="#"><img src="images/facebook_color.svg" /></a>
+                    <a href="#"><img src="images/linkedin_color.svg" /></a>
+                    <a href="#"><img src="images/instagram_color.svg" /></a>
+                    <a href="#"><img src="images/twitter_color.svg" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-background">
+            <div class="member-info">
+                <img src="images/popcorn.svg">
+                <div class="member-detail">
+                    <h1>Name</h1>
+                    <h2>Divison</h2>
+                </div>
+                <div class="member-contact">
+                    <h3 contact="email"><a href="#">email@email.com</a></h3>
+                    <h3 contact="phone"><a href="#">+937</a></h3>
+                </div>
+                <div class="member-social">
+                    <a href="#"><img src="images/facebook_color.svg" /></a>
+                    <a href="#"><img src="images/linkedin_color.svg" /></a>
+                    <a href="#"><img src="images/instagram_color.svg" /></a>
+                    <a href="#"><img src="images/twitter_color.svg" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-background">
+            <div class="member-info">
+                <img src="images/popcorn.svg">
+                <div class="member-detail">
+                    <h1>Name</h1>
+                    <h2>Divison</h2>
+                </div>
+                <div class="member-contact">
+                    <h3 contact="email"><a href="#">email@email.com</a></h3>
+                    <h3 contact="phone"><a href="#">+9374934739</a></h3>
+                </div>
+                <div class="member-social">
+                    <a href="#"><img src="images/facebook_color.svg" /></a>
+                    <a href="#"><img src="images/linkedin_color.svg" /></a>
+                    <a href="#"><img src="images/instagram_color.svg" /></a>
+                    <a href="#"><img src="images/twitter_color.svg" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-base"></div>
+    <div id="footer">
+        <div id="social">
+            <a href="https://www.facebook.com/abhisarga/">
+                <img src="images/facebook.svg" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCf1DbeeTKGzpwRv9X7YECfg">
+                <img src="images/youtube.svg" />
+            </a>
+            <a href="https://www.instagram.com/abhisarga/">
+                <img src="images/instagram.svg" />
+            </a>
+        </div>
+        <div id="address">
+            USICT GGSIPU<br />
+            Sector 16 Dwarka<br />New Delhi
+        </div>
+    </div>
+
+    <script>
+        let a = document.getElementById("hamburger");
+        a.setAttribute("value", "\u2630");
+        a.addEventListener("click", () => {
+            toggleNav();
+            if (a.getAttribute("value") === "\u2630") {
+                a.setAttribute("value", "\u2715");
+            } else {
+                a.setAttribute("value", "\u2630");
+            }
+        });
+        function toggleNav() {
+            document.getElementById("side-nav").classList.toggle("active");
+        }
+        document.body.addEventListener('click', function (e) {
+            if (!(document.getElementById("side-nav").contains(e.target) || a.contains(e.target))) {
+                document.getElementById("side-nav").classList.remove("active");
+            }
+        });
+    </script>
+</body>
+
+</html>

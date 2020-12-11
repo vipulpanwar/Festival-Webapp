@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 192.76 192.76">
+  <defs>
+    <style>
+      .a, .b, .h {
+        fill: none;
+      }
+
+      .a {
+        clip-rule: evenodd;
+      }
+
+      .c, .e, .i {
+        fill: #fff;
+      }
+
+      .c, .d, .e, .i {
+        fill-rule: evenodd;
+      }
+
+      .d {
+        fill: #ed1c24;
+      }
+
+      .d, .e, .h, .i {
+        stroke: #231f20;
+        stroke-miterlimit: 2.61;
+      }
+
+      .d, .e, .h {
+        stroke-width: 1.66px;
+      }
+
+      .f {
+        clip-path: url(#a);
+      }
+
+      .g {
+        clip-path: url(#b);
+      }
+
+      .i {
+        stroke-width: 0.18px;
+      }
+    </style>
+    <clipPath id="a">
+      <path class="a" d="M96.38,59.54A36.84,36.84,0,1,1,59.54,96.38,36.84,36.84,0,0,1,96.38,59.54Z"/>
+    </clipPath>
+    <clipPath id="b">
+      <rect class="b" x="59.54" y="59.54" width="73.68" height="73.67"/>
+    </clipPath>
+  </defs>
+  <title>cap</title>
+  <g>
+    <polygon class="c" points="0 0 192.76 0 192.76 192.76 0 192.76 0 0 0 0"/>
+    <path class="d" d="M96.38,16.26A80.12,80.12,0,1,1,16.26,96.38,80.12,80.12,0,0,1,96.38,16.26Z"/>
+    <path class="e" d="M96.38,30.21A66.17,66.17,0,1,1,30.21,96.38,66.17,66.17,0,0,1,96.38,30.21Z"/>
+    <path class="d" d="M96.38,44.94A51.44,51.44,0,1,1,44.94,96.38,51.44,51.44,0,0,1,96.38,44.94Z"/>
+    <g class="f">
+      <g class="g">
+        <image width="160" height="158" transform="matrix(0.48, 0, 0, -0.48, 58.28, 134.48)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKEAAACfCAYAAACRIblrAAAACXBIWXMAABcRAAAXEQHKJvM/AAACdElEQVR4Xu3du26lMBRAUbjP///hkGImUmwJpQneKdbqIlFuHWPwJftxHNu2bccGkdtPF8DVHt//2Pf97Dr4Vf9X4G3bTEL+ABGSEyE5EZITITkRkhMhORGSEyE5EZITITkRkhMhORGSEyE5EZITITkRkhMhORGSEyE5EZITIbnhd8e3myZZb4jw+XyeXQeXGSJ8vd5n18Flpkk4/AlLDNU9HpZj1hsifL8tx6w3TULLMevZmJAbIrzf72fXwWWmCC3HrDc+onm8zq6Dy5iE5ERIzsNqctPX+52iYb3xKJcICZiE5PwzHXJjhE5WE7Ack7MckzMJyZmE5ExCcmOEm0nIeuOJBZOQwPTaziRkPZOQnN0xuekUqwhZzyQkZxKS87CanElIziQkZxKS8+6Y3PTGRISsZxKSc09IziQkZxKSEyE5EZKbHtGcXAUXmiah13asZ3dMznJMznJMTnXkPKIhJ0JylmNy4yQ8TELWsxyTEyE5EZKzMSFnEpITITkRkhMhORGSEyG5IcJDhASmd8cnV8GFLMfkpuUY1jMJyYmQnAjJ2R2T85yQnOWY3DgJLccETEJy7gnJmYTk3BOSMwnJ+QwIOadoyFmOyQ0RfliOCTjAQM49IbnpOaHlmPVMQnLeHZPzsJqcj2SS85yQnFM05CzH5Mbl2O6YgN0xOQ+rydkdk7M7JmdjQs55QnKOcpFzT0jOUS5yJiE5u2NyNibkpjcmZ5fBdRzlIidCciIkJ0JyIiQnQnIiJCdCciIkJ0JyIiQnQnIiJCdCciIkJ0JyIiQnQnIiJCdCciIkJ0JyIiS3H/++/eEXx2S+fvzu0wtkPgEOrj0Lyp7GhAAAAABJRU5ErkJggg=="/>
+      </g>
+    </g>
+    <path class="h" d="M96.38,59.54A36.84,36.84,0,1,1,59.54,96.38,36.84,36.84,0,0,1,96.38,59.54Z"/>
+    <polygon class="i" points="75.98 124.76 83.96 99.51 63.44 83.37 89.05 83.37 96.61 60.6 104.36 83.37 130.56 83.37 110.04 99.51 117.49 124.23 96.61 109.21 75.98 124.76 75.98 124.76"/>
+  </g>
+</svg>
